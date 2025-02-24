@@ -1,8 +1,27 @@
-# React + Vite
+# Vehicle Management App - React + MobX + Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+A CRUD application for managing vehicle makes (BMW, Ford, etc.) and models (X5, Focus, etc).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features: 
+Pagination, sorting, filtering via API, form validation, and MobX state management.
+
+### Tech Stack:
+
+- Frontend: React Vite 
+- State Management: MobX 
+- Backend: Firebase/Firestore 
+- UI: Material-UI 
+- Forms: mobx-react-form 
+- Routing: React Router 
+- HTTP Client: Axios
+
+## Installation
+
+npm create vite@latest
+npm install react-router
+npm install mobx mobx-react mobx-react-form
+npm install firebase
+npm install axios
+
