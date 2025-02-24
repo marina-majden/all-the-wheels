@@ -1,5 +1,5 @@
 import './App.css';
-import { StoreProvider } from './stores/store';
+import { StoreProvider } from './stores/BaseStore';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import Home from './pages/Home';
