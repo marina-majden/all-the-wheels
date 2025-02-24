@@ -1,21 +1,31 @@
-/* Component that defines the vehicle object and returns its UI */
-import { observer } from 'mobx-react';
-import { observable } from 'mobx';
-import VehicleStore from '../stores/VehicleStore';
+/* Store for state of vehicles */
+import { makeObservable, observable, action } from 'mobx';
 
-const Vehicle = ({ vehicle }) => {
-    const vehicleStore = observable(VehicleStore);
-    const { id, make, model, year, isLiked } = vehicle;
-    const handleLike = () => {
-        vehicleStore.updateVehicle({ ...vehicle, isLiked: !isLiked });
-    };
-    
-    return (
-        <li>
-        {make} {model} {year}{' '}
-        <button onClick={handleLike}>{isLiked ? 'Unlike' : 'Like'}</button>
-        </li>
-    );
+class VehicleStore {
+    vehicles = [];
+
+    constructor() {
+        makeObservable(this, {
+            vehicles: observable,
+            addVehicle: action,
+            updateVehicle: action,
+            deleteVehicle: action,
+        });
     }
 
-export default observer(Vehicle);
+    addVehicle(vehicle) {
+        this.vehicles.push(vehicle);
+    }
+
+    updateVehicle(updatedVehicle) {
+        this.vehicles = this.vehicles.map((vehicle) =>
+            vehicle.id === updatedVehicle.id ? updatedVehicle : vehicle
+        );
+    }
+
+    deleteVehicle(vehicleId) {
+        this.vehicles = this.vehicles.filter((vehicle) => vehicle.id !== vehicleId);
+    }
+}
+
+export default new VehicleStore();
