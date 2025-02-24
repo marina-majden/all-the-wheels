@@ -1,0 +1,57 @@
+
+
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2019,
+      "isLiked": false,
+      "price": 20000,
+      "photo": "https://via.placeholder.com/150",
+      "features": ["Automatic", "4 doors", "5 seats"]
+  
+    },
+    {
+      "id": 2,
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2019,
+      "isLiked": false,
+      "price": 25000,
+      "photo": "https://via.placeholder.com/150",
+      "features": ["Automatic", "4 doors", "5 seats"]
+    },
+    {
+      "id": 3,
+      "make": "Toyota",
+      "model": "RAV4",
+      "year": 2019,
+      "isLiked": false,
+      "price": 30000,
+      "photo": "https://via.placeholder.com/150",
+      "features": ["Automatic", "4 doors", "5 seats"]
+    },
+    {
+      "id": 4,
+      "make": "Toyota",
+      "model": "Highlander",
+      "year": 2019,
+      "isLiked": false,
+      "price": 35000,
+      "photo": "https://via.placeholder.com/150",
+      "features": ["Automatic", "4 doors", "5 seats"]
+    },
+    {
+      "id": 5,
+      "make": "Toyota",
+      "model": "Sienna",
+      "year": 2019,
+      "isLiked": false,
+      "price": 40000,
+      "photo": "https://via.placeholder.com/150",
+      "features": ["Automatic", "4 doors", "5 seats"]
+    }
+  ]
+}
