@@ -20,7 +20,7 @@ Pagination, sorting, filtering via API, form validation, and MobX state manageme
 ## Installation
 
 npm create vite@latest
-npm install react-router
+npm install react-router react-router-dom
 npm install mobx mobx-react mobx-react-form
 npm install firebase
 npm install axios
